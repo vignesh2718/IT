@@ -59,10 +59,10 @@ label{
   text-align: center;
 
 }
-#gender{
-margin: 10px;
+.gender{
+    padding:10px;
+    /* margin: 10px; */
 }
-
 .footer{
    margin: 25px 0;
    display: flex;
@@ -99,8 +99,13 @@ margin: 10px;
             <input type="date" id="dob" class="head">
            <label for="address" class="head" >Address </label> 
             <input type="text" id="address" class="form-input address" placeholder="One Apple Park Way, Cupertino, CA 95014, United States" >
-       <div>  <label for="gender" class="head">Gender : </label>
-            <input type="radio" id="gender" value="Male">Male <input type="radio" id="gender" value="Female">Female</div>
+      
+       <div class="gender"> 
+        <label for="address" class="head " >Gender :</label>
+        <input type="radio"   name="gender" value="male"> Male
+<input type="radio" name="gender"  value="female"> Female
+  </div>
+          
 
             <label for="events" class="head">Events : </label>
             <select name="events" id="events" class="form-input">
