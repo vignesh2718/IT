@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container{
+            width: 500px;
+            height: fit-content;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 50px auto;
+
+
+        }
+        .heading{
+            padding: 10px 0;
+            margin: 10px;
+            font-weight: bolder;
+            font-family: monospace;
+            text-align: center;
+        }
+        .body{
+           padding: 10px 60px;
+        }
+        .form-input{
+            font-family: monospace;
+            font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+  
+        }
+::-webkit-input-placeholder {
+ color:#c8c5c5;
+}
+label{
+    cursor: defaultS;
+}
+.head{
+    font-family:monospace ;
+    font-size: 15px;
+}
+#dob{
+  line-height: 1.5rem;
+  margin: 7px;
+  border-radius: 4px;
+  width:250px;
+  text-align: center;
+
+}
+#gender{
+margin: 10px;
+}
+
+.footer{
+   margin: 25px 0;
+   display: flex;
+   justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer button{
+    padding: 7px 10px;
+    border: 1px solid;
+    border-radius: 9px;
+}
+    </style>
+
+</head>
+<fieldset style="border: 1px solid white;" >
+    <div class="container">
+        <h2 class="heading">Registration Form</h2>
+          
+        <form  action="">
+          
+          <div class="body">
+ 
+            <label for="firstname" class="head">First name </label>
+            <input type="text" id="firstname" class="form-input" placeholder="first name" required="required" />
+          
+            <label for="lastname" class="head">Last name</label>
+            <input type="text" id="lastname" class="form-input" placeholder="last name" />
+            <label for="mail" class="head">Mail-Id</label>
+            <input type="email" id="email" class="form-input" placeholder="xyz@gmail.com" required="required" >
+            <label for="number" class="head">Mobile number </label>
+            <input type="tel" id="number" class="form-input" placeholder="123-45-678"  pattern="[0-9]{10}" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" class="head">
+           <label for="address" class="head" >Address </label> 
+            <input type="text" id="address" class="form-input address" placeholder="One Apple Park Way, Cupertino, CA 95014, United States" >
+       <div>  <label for="gender" class="head">Gender : </label>
+            <input type="radio" id="gender" value="Male">Male <input type="radio" id="gender" value="Female">Female</div>
+
+            <label for="events" class="head">Events : </label>
+            <select name="events" id="events" class="form-input">
+                <option value="Inaugration">Inaugration</option>
+                <option value="Dance">Dance</option>
+                <option value="Standup-Comedy">Standup-Comedy</option>
+                <option value="WorkShop">WorkShop</option>
+              </select>
+            
+
+            
+
+              <div class="footer">
+       
+                <button type="submit" class="btn head" >Submit </button>
+                <button type="submit" class="btn head" >Rest </button>
+
+              </div>
+
+         <div style="text-align: center; border: 1px solid gainsboro; border-radius: 10px; color:#c8c5c5; ">VIGNESH N 2019CSE0684 7CSE12</div>
+           
+</div>
+    </div>
+  
+</div>
+          </div>
+          
+          </div>
+        </fieldset>
+        </form>
+       
+    </div>
+</body>
+</html>
