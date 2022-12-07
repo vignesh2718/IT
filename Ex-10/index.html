@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .inner {
+        text-align: center;
+        width: 490px;
+        height: 70px;
+        margin: auto;
+        border-radius: 20px;
+        border-style: solid;
+      }
+    a{
+        color:black;
+        
+        font-size: 20px;
+        padding-right: 20px;
+       
+    }
+   
+li a:hover{
+    background-color: blue;
+    font-size: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+      
+}
+    ul{
+       animation: rotation 4s infinite linear;;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    }
+   li{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+   }
+   @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
+</head>
+<body>
+    <h1>Navigation</h1>
+    <div class="inner"><nav>
+       <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+    
+      </nav></div>
+    
+</body>
+</html>
