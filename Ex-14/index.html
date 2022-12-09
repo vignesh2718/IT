@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>document</title>
+</head>
+<body >
+<form onsubmit="submitt()">
+    <h1>FORM</h1>
+<p>Enter Text:<input type="text" onmouseover="over()" id="txt"
+class="text"></p>
+<p>Enter Username:<input type="text" name="username" id="user" class="user"></p>
+<p>Enter Password:<input type="password" name="Password" id="pwd" class="pass"></p>
+<input type="submit" value="submit" class="button">
+</form>
+<style>
+body{
+    text-align: center;
+       padding: 10px;
+    margin: auto;
+    background-image :url('https://media.istockphoto.com/id/1339787499/photo/empty-dark-blue-studio-room-with-light-and-shadow-abstract-background-copy-space-studio-room.jpg?b=1&s=170667a&w=0&k=20&c=sEYFpHbrxOugC-NlO4vh1AQurJAsR-RnLbg_KHgj3kM=');
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+p,h1{
+font-size: 25px;
+color: white;
+}
+.text,.user,.pass{
+width:250px;
+height:25px;
+border:2px solid black;
+border-radius: 20px;
+font-size: 25px;
+color: black;
+}
+.button{
+    font-size: 26px;
+    border-radius: 16px;
+    margin-left: 10px;
+    padding: 5px;
+
+}
+input{
+font-size: 25px;
+}
+</style>
+<script src="index.js"></script>
+</body>
+</html>
